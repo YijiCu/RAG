@@ -1,7 +1,7 @@
 # RAG
-# 本项目基于InternLM实现 New Energy LLM 与 Tutorial 的链接。
+# 本项目基于InternLM实现清洁能源行业知识专家与 InternLM Tutorial 的链接。
 # https://github.com/InternLM/Tutorial
-# 欢迎大家加入InternLM大家庭一起学习大模型！！作为一名从0开始的小白，在InternLM的课程下我一步步也终于是成功做出了一点项目成果！期待更多的人来这里一起提升自己！
+# 欢迎大家加入InternLM大家庭一起学习大模型！！作为一名从0开始的小白，在InternLM课程的帮助下我一步步也终于是成功做出了一点项目成果！期待更多的人来这里一起提升自己！
 
 
 本项目旨在利用RAG技术为实现行业知识专家大模型的架构。
@@ -18,3 +18,4 @@ https://github.com/YijiCu/RAG
 ![image](https://github.com/YijiCu/RAG/blob/main/%E5%9B%BE%E7%89%872.png)
 ![image](https://github.com/YijiCu/RAG/blob/main/%E5%9B%BE%E7%89%871.png)
 
+# 欢迎交流！！！
