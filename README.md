@@ -15,7 +15,7 @@
 https://github.com/YijiCu/RAG
 
 # 视频地址
-
+https://www.bilibili.com/video/BV1FfWde5EQL/
 
 # 项目架构图及Gradio Demo
 ![image](https://github.com/YijiCu/RAG/blob/main/%E5%9B%BE%E7%89%872.png)
