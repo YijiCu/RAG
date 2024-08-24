@@ -15,4 +15,6 @@ https://github.com/YijiCu/RAG
 
 
 # 项目架构图及Gradio Demo
+![image](https://github.com/YijiCu/RAG/blob/main/%E5%9B%BE%E7%89%872.png)
+![image](https://github.com/YijiCu/RAG/blob/main/%E5%9B%BE%E7%89%871.png)
 
