@@ -18,7 +18,7 @@ https://github.com/YijiCu/RAG
 https://www.bilibili.com/video/BV1FfWde5EQL/
 
 # 项目架构图及Gradio Demo
-![image](https://github.com/YijiCu/RAG/blob/main/%E5%9B%BE%E7%89%872.png)
+![image](https://github.com/YijiCu/RAG/blob/main/InternLM%E6%A6%82%E5%BF%B5%E5%9B%BE.png)
 ![image](https://github.com/YijiCu/RAG/blob/main/%E5%9B%BE%E7%89%871.png)
 
 # 欢迎交流！！！
