@@ -23,7 +23,7 @@
 我们的目标是为风电行业提供一个智能、可靠的知识助手，助力工程师们更高效地获取和应用专业知识。
 
 ### 项目地址
-https://github.com/YijiCu/New_energy_llm
+https://github.com/YijiCu/RAG
 
 ### 视频地址
 https://www.bilibili.com/video/BV1FfWde5EQL/
