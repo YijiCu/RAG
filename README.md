@@ -36,22 +36,68 @@ https://www.bilibili.com/video/BV1FfWde5EQL/
 ![image](https://github.com/YijiCu/New_energy_llm/blob/main/config/%E6%95%88%E6%9E%9C%E5%9B%BE2.png)
 
 ### 项目文件介绍
-1、chroma_db：存放知识库文件，该文件为向量化处理后的知识库文件。所使用的开源向量数据库工具为 @Chroma https://docs.trychroma.com/ 。由于github大小限制，处理后的文件无法上传，请使用getdatabase.py脚本自行处理数据库文件。
-2、config：存放项目的图片文件。
-3、getdatabase.py：处理数据库文件脚本，请自行下载数据库文件，并提供路径至该脚本中。本项目所使用的Embedding模型为paraphrase-multilingual-MiniLM-L12-v2。目前支持对txt/.docx/.pptx/.pdf 格式的文本进行处理，同时增加了对乱码形式文本的自动清除。目前暂不支持对.doc和.ppt以及扫描版本.pdf文件的处理，后续会更新相关能力。目前的切块方式是对整个文档的文本进行简单粗暴的切段处理，1000个token为一段，前后各200token的重复区间。后续也会更新更智能的文本切段处理，减少同一文档内不同文本段之间的向量距离。
-4、db_operations.py：数据库操作脚本，该脚本为项目核心，负责知识库的检索、向量化、更新等操作。
-5、rag_model.py：rag模型脚本，该脚本为项目核心，负责模型与向量知识库的链接、推理等操作。支持更换底座，但需要相应的模型配置。本项目所使用的大模型底座为*InternLM2.5-20B-chat*，并且为轻量化处理并增加响应速度，使用LMDeploy进行了4-bit精度的量化。在该脚本中增加了缓存功能，以减少推理时间。同时使用asyncio预设了一个流式输出功能，以模拟流式输出效果，使模型输出显得不是那么生硬。
-6、chaiui.py：界面脚本，负责界面的搭建、交互等操作。
 
-### 如何运行
-1、首先创建虚拟环境并进入到工作目录下，安装依赖包，命令如下：
-pip install -r requirements.txt
-2、运行getdatabase.py脚本，处理数据库文件，命令如下：
-python getdatabase.py
-3、运行chatui.py脚本，测试该项目！命令如下：
-streamlit run chatui.py
-4、打开开发机返回的端口连接，即可进行测试~
+1. **chroma_db/**
+   - 存放知识库文件，为向量化处理后的知识库文件。
+   - 使用开源向量数据库工具 [Chroma](https://docs.trychroma.com/)。
+   - 注意：由于 GitHub 大小限制，处理后的文件无法上传，请使用 `getdatabase.py` 脚本自行处理数据库文件。
 
+2. **config/**
+   - 存放项目的图片文件。
 
+3. **getdatabase.py**
+   - 处理数据库文件脚本。
+   - 使用说明：
+     - 请自行下载数据库文件，并在脚本中提供文件路径。
+     - 使用的 Embedding 模型：paraphrase-multilingual-MiniLM-L12-v2。
+   - 功能：
+     - 支持处理 .txt/.docx/.pptx/.pdf 格式的文本。
+     - 自动清除乱码文本。
+     - 暂不支持 .doc、.ppt 和扫描版 .pdf 文件处理（后续会更新）。
+   - 当前切块方式：
+     - 对整个文档进行简单切段处理，1000个 token 为一段，前后各 200 token 的重复区间。
+     - 后续计划更新更智能的文本切段处理方法。
 
-**欢迎交流！！！**
+4. **db_operations.py**
+   - 数据库操作核心脚本。
+   - 负责知识库的检索、向量化、更新等操作。
+
+5. **rag_model.py**
+   - RAG 模型核心脚本。
+   - 功能：
+     - 负责模型与向量知识库的链接、推理等操作。
+     - 支持更换底座模型（需相应配置）。
+   - 使用的大模型：
+     - 底座：InternLM2.5-20B-chat
+     - 优化：使用 LMDeploy 进行 4-bit 精度量化，提高响应速度。
+   - 特性：
+     - 增加缓存功能，减少推理时间。
+     - 使用 asyncio 预设流式输出功能，模拟流式输出效果。
+
+6. **chatui.py**
+   - 界面脚本，负责界面的搭建和交互操作。
+
+## 如何运行
+
+1. 创建虚拟环境并安装依赖：
+   ```
+   conda create -n [your_env_name] python=3.11
+   conda activate [your_env_name]
+   pip install -r requirements.txt
+   ```
+
+2. 处理数据库文件：
+   ```
+   python getdatabase.py
+   ```
+
+3. 运行聊天界面：
+   ```
+   streamlit run chatui.py
+   ```
+
+4. 打开开发机返回的端口连接，即可开始测试。
+
+## 欢迎交流！
+
+如有任何问题或建议，欢迎随时与我们联系。
