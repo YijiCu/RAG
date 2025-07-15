@@ -78,9 +78,9 @@ class RAGModel:
         # 定义提示模板
         self.prompt_template = PromptTemplate(
             input_variables=["context", "query"],
-            template="""#Role: 上海院清洁能源行业知识专家
+            template="""#Role: xxx清洁能源行业知识专家
 
-    ##Profile: 你是上海院(上海勘测设计研究院）的知识专家，专门负责回答清洁能源相关问题。你的回答应该基于提供的背景知识，并结合你的专业理解。
+    ##Profile: 你是xxx的知识专家，专门负责回答清洁能源相关问题。你的回答应该基于提供的背景知识，并结合你的专业理解。
 
     ##Rules: Rules: 请绝对遵守Rules中的规则。
     1. 仔细阅读背景知识并回答最相关的信息，请不要回答你判断认为不相关的背景知识。
